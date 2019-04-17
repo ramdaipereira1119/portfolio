@@ -1,0 +1,125 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Video Watcher</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="apis.css">
+  <style type="text/css">
+  /* This puts titles always on a separate line from thumbnails */
+  #videos-list img {
+    display: block;
+  }
+  </style>
+ </head>
+ <body>
+
+<div class="container">
+
+ <div class="row">
+   <div class="col-md-12">
+    <h1 class="page-header">Best Videos Ever ❤</h1>
+   </div>
+ </div>
+ <!-- facebook like button -->
+ <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=50&layout=button&action=like&size=small&show_faces=true&share=false&height=65&appId" width="50" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+  <div class="row">
+   <div class="col-md-3">
+     <ul id="videos-list">
+    </ul>
+   </div>
+   <div class="col-md-9" id="video-watcher">
+   </div>
+ </div>
+</div>
+
+<script type="text/javascript" src="https://jtcoders.github.io/apis/lib/youtube.js"></script>
+<script type="text/javascript" src="https://jtcoders.github.io/apis/lib/jquery.min.js"></script>
+
+<script>
+
+ function addVideoToList(video) {
+    var videoLink = $('<a>');
+    videoLink.append(video.title);
+    var linkUrl = videoLink.attr('href');
+    var thumbnailUrl = youtube.generateThumbnailUrl(video.youtubeId);
+    var thumbnailImg = $('<img>');
+    thumbnailImg.attr('src', thumbnailUrl);
+    videoLink.append(thumbnailImg);
+    videoLink.on('click', function(e) {
+        e.preventDefault();
+
+  //ratings
+   var ratingEl = $('<img>');
+   ratingEl.attr('src', "https://chart.googleapis.com/chart?chs=200x125&cht=gom&chco=FFFFFF,000000&chd=t:" + video.rating);
+
+        var videoTitle = $('<h2>');
+        videoTitle.html(video.title + ' <small>' + video.author + '</small>');
+        var videoEmbed = $('<iframe></iframe>');
+        videoEmbed.attr('src', youtube.generateEmbedUrl(video.youtubeId));
+        videoEmbed.attr('width', 560);
+        videoEmbed.attr('height', 315);
+
+        var videoWatcher = $('#video-watcher');
+        videoWatcher.hide();
+        videoWatcher.empty();
+        videoWatcher.append(videoTitle);
+        videoWatcher.append(videoEmbed);
+        videoWatcher.append(ratingEl);
+        videoWatcher.fadeIn();
+    });
+
+    var videoItem = $('<li>');
+    videoItem.append(videoLink);
+    $('#videos-list').append(videoItem);
+ }
+
+var videos = [
+  {"youtubeId": "TddFnTB_7IM",
+    "title": "Trip through the 80s",
+    "author": "meliberty",
+    "rating": 80
+  },
+  {"youtubeId": "HwSKkKrUzUk",
+    "title": "Circle of Life",
+    "author": "parkerjademerce",
+    "rating": 90
+  },
+  {"youtubeId": "il2IrgFHfsg",
+    "title": "The Ooooh Cat",
+    "author": "RnBTree",
+    "rating": 60
+  },
+  {"youtubeId": "epUk3T2Kfno",
+    "title": "Otters Holding Hands",
+    "author": "cynthiaholmes",
+    "rating": 100
+  }
+]
+
+for (var i = 0; i < videos.length; i++) {
+   addVideoToList(videos[i]);
+}
+
+ </script>
+
+      <div class="container">
+<!-- flag counter; place where you want it to appear on the browser -->
+      <a href="http://s11.flagcounter.com/more/Vzq"><img src="http://s11.flagcounter.com/count2/Vzq/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+
+      <!-- facebook share button -->
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=88&height=20&appId" width="88" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+      <!--twitter button-->
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <!--pinterest button-->
+      <a data-pin-do="buttonFollow" href="https://www.pinterest.com/pinterest/">Pinterest</a>
+      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+      </div>
+
+
+
+ </body>
+</html>

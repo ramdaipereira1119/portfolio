@@ -1,0 +1,6 @@
+'The demand for luxury cars, supercars and hypercars is stronger than ever. - CNN.',
+'I like Mercedes because my wife has been in two big accidents and emerged without a scratch, thanks to the safety of these cars. – Nobu Matsuhisa',
+'Luxury cars are about status, comfort and performance. - U.S. News',
+'Now, with women driving, I can see them definitely showing so much more personality through their purchases. – Bloomberg',
+'The difference is in how each component of the car performs. - U.S. News',
+'..now that Saudi women will be able to legally operate vehicles, as of June 24, 2018, smart observers expect the 3-ton $450,000 V-12 coach to be overtaken in popularity by something rather more fun, such as the sporty two-door Rolls-Royce Wraith. - Bloomberg'

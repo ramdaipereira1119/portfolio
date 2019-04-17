@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Picture Rollover Lab</title>
+  </head>
+  <body>
+    <h1>Lab: Rollovers by You</h1>
+
+    <h3>Sample A is an example of a roll over using DreamWeaver.  But you can do it  by raw coding as well.</h3>
+
+    <hr>
+    <td>
+
+    <tr>
+
+    <tr>
+      <td align="center">
+
+      <h2>Sample A HTML Rollover</h2>
+
+      <img src="1.jpg" width="600"
+        onmouseover="this.src='2.jpg';"
+        onmouseout="this.src='1.jpg';"
+      </img>
+
+      <h3>This hoverover is create with only HTML and in line JS methods. Whenyou hover over it, this image changes.</h3>
+
+      <hr>
+      </td>
+      </tr>
+
+      <tr>
+      <td align="center">
+
+      <h2>JavaScript Rollover</h2>
+
+      <div id="slider">
+
+      <h2>JavaScript Rollover</h2>
+      <img src="j1.jpg" width="600" name="r1" />
+
+      <br>
+      <br>
+
+      <table width="1000">
+      <tr>
+        <td align="center">
+          <img src="j1.jpg" width="200" onmouseover="document.r1.src=pic1.src;" />
+        </td>
+
+        <td>
+          <img src="j2.jpg" width="200" onmouseover="document.r1.src=pic2.src;" />
+        </td>
+
+        <td>
+          <img src="j3.jpg" width="200" onmouseover="document.r1.src=pic3.src;" />
+        </td>
+
+        <td>
+          <img src="j4.jpg" width="200" onmouseover="document.r1.src=pic4.src;" />
+        </td>
+
+        <td>
+          <img src="j5.jpg" width="200" onmouseover="document.r1.src=pic5.src;" />
+        </td>
+        </tr>
+        </table>
+      </div>
+
+    <script>
+      if(document.images){
+        pic1=new Image();
+        pic2=new Image();
+        pic3=new Image();
+        pic4=new Image();
+        pic5=new Image();
+        pic1.src="j1.jpg";
+        pic2.src="j2.jpg";
+        pic3.src="j3.jpg";
+        pic4.src="j4.jpg";
+        pic5.src="j5.jpg";
+      }
+      else {
+        pic1=pic2=pic3=pic4=pic5=document.r1="";
+      }
+    </script>
+
+    <h3>
+      This is a rollover created with HTML and JavaScript.  When you hover over the smaller images, that image you have your mouse on is the image that shows as the main image on the top.
+    </h3>
+
+    <hr>
+    </td>
+    </tr>
+
+  </table>
+
+    <br>
+
+    <div id="footer">
+      <p>Web Client Programming</p>
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,430 @@
+*
+{
+  margin:0;
+  padding:0;
+}
+
+.row {
+  max-width: 1140px;
+  margin:0 auto;
+}
+
+body {
+  font-family: sans-serif monospace;
+}
+
+
+#alert {
+  background-color:black;
+  color: white;
+  margin-left: 93%;
+  margin-top: 1px;
+  border:blue;
+  padding: 10px;
+
+  list-style: none;
+  float:left;
+  margin-top: 10px;
+
+}
+
+
+
+/*WHO AM I SECTION*/
+.hero {
+  position: absolute;
+  width: 1140px;
+  top:1%;
+  left:50%;
+  transform: translate(-50%,50%);
+}
+
+
+
+
+
+/*HEADER BACKGROUND SECTION*/
+header {
+  /*background-image: url("img/valley.jpg");*/
+  /*background-image: url("https://www.hellomagazine.com/imagenes/travel/2018061449462/things-to-do-in-rome-3-days/0-243-749/Colosseum-Rome-t.jpg");*/
+  background-image: url("https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/10/Dubai-at-night-cover.jpg");
+
+  height:100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color:white;
+  font-size: 7em;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+
+/*NAVIGATION BAR*/
+.main-nav {
+  list-style: none;
+  float:left;
+  margin-top: 10px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left:10px;
+}
+
+.main-nav li a {
+  color:black;
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.main-nav li a:hover {
+  color:white;
+  border-bottom: 2px solid orange;
+  transition: all 0.5s ease-in;
+  padding:15px;
+}
+
+.logo img {
+  height:100px;
+  float:left;
+  margin-top: 30px;
+}
+
+.btn {
+  border:1px solid #e67e22;
+  padding:10px 30px;
+  color:#e67e22;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 12px;
+/*  margin-right:15px;*/
+  margin: auto;
+    text-align: center;
+}
+
+.button-awesome {
+  margin-top: 20px;
+
+}
+
+.btn-half{
+  background-color: #e67e22;
+  color: white;
+
+}
+
+.btn-full {
+  background-color: #e67e22;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+.btn-full1{
+  background-color: #e67e22;
+  color: white;
+}
+
+.copy {
+  width: 70%;
+  margin-left: 15%;
+  martin-bottom: 20px;
+
+}
+
+/*--POP UP --*/
+/*
+#messsage {
+  background-color: green;
+  float:right;
+  color: orange;
+
+}*/
+
+
+
+#message{
+  background-color: black;
+  float: right;
+  color:orange;
+  text-decoration: bold;
+  padding-top: 10px;
+}
+
+
+
+h3:after {
+  width:100px;
+  height:2px;
+  background-color: #e67e22;
+  display: block;
+  content: "";
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+
+.features h3 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+#mypic {
+  float:left;
+  padding: 30px;
+  width: 25px;
+  height:25px;
+  margin-left: 125px;
+
+}
+
+#about {
+  margin-right: 80px;
+}
+
+/*ABOUT ME*/
+#desc {
+  text-align: center;
+}
+/*
+.features i {
+  font-size: 40px;
+  color: #e67e22;
+  margin-left: 35%
+
+} */
+
+/* ABOUT ME SECTION */
+.features h4 {
+    margin-left:0px;
+    text-align: center;
+
+}
+
+h4 {
+  color: orange;
+}
+
+
+h5 {
+  color:white;
+  text-align: center;
+}
+
+
+/* EXPERIENCE */
+.arranging {
+  text-align: left;
+}
+
+h6 {
+  font-weight: bold;
+
+}
+
+#experience {
+  padding-bottom: 20px;
+
+}
+/* SKILLS */
+#skills {
+  background-color: ;
+  text-align: center;
+}
+
+.skills {
+  height:1.5px;
+  background-color: black;
+}
+
+.checked {
+  color:orange;
+
+}
+
+/* PORTFOLIO BACKGROUND */
+#port1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq0peB3ULiLyxIfMTukX3ysZVt1eFjQv7zhYjZf07m-ia7O5a");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#portfolio {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 3em;
+}
+
+.desc {
+  color:orange;
+  text-align: center;
+}
+
+
+/* PORTFOLIO IMAGES */
+.work {
+  margin:40px;
+  padding: 10px 10px 10px 10px;
+}
+
+.work-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.work-showcase li {
+  display:block;
+  width:25%;
+  float:left;
+}
+
+.work-photo {
+  width: 80%;
+  margin:0;
+  overflow: hidden;
+  overflow-x: visible;
+}
+
+.work-photo img {
+    width:100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: all 0.5s;
+}
+
+.work-photo img:hover {
+    transform: scale(1.00);
+}
+
+/* SKILLS SECTION
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  background-color: yellow;
+  padding:50px;
+  font-size: 20px;
+}*/
+
+
+
+/* MEDIA FORM */
+#media {
+  padding-top: 1px;
+  padding-right: ;
+  padding-bottom: 55px;
+  padding-left: 45%;
+
+}
+
+
+/* CONTACT FORM */
+#cform {
+  background-color: tomato;
+  background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_689,q_60,w_1920/v1/clients/lakenorman/FAQ_Header_170017be-c747-465c-a71f-2f1af98da275.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.contact-form {
+  background-color: lightgray;
+  padding: 20px;
+  margin-right: 2px;
+  border-radius: 10px;
+  border:1px solid black;
+
+}
+
+#footer {
+  padding-top: 180%;
+}
+
+
+
+/*
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:darkgray;
+  margin-top: 20px;
+  font-size: 8px;
+  text-decoration: bold;
+}
+
+#footer {
+  font-size: 12px;
+}
+
+/*
+  width:85%;
+  max-width:600px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius:8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+}
+
+.cont-form h1 {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+*/
+
+
+/*
+.work-showcase {
+  list-style:none;
+  width:100%;
+
+}
+
+.work-showcase li {
+  display: block;
+  width:25%;
+  float:left;
+}
+
+.work-photo {
+  width:100%;
+  margin:0px;
+  overflow:hidden;
+}
+
+.work-photo img {
+  width:100%;
+  height:auto;
+  transform: scale(1.15);
+  transition: all 0.5s;
+
+}
+
+.work-photo img:hover {
+  transform: scale(2.15);
+}
+
+.work {
+    margin:60px;
+}
+*/
+
+/*
+div.desc {
+  padding:10px;
+  text-align: center;
+  color: blue;
+}*/

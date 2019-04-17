@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+    <link href='cashRegister.css' rel="stylesheet" type="text/css" />
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          }
+          th, td {
+            padding: 3px;
+            text-align: left;
+          }
+    </style>
+  </head>
+
+  <body>
+  <div id="wrapper">
+  <h1>Welcome to FOODTOWN!<img src="https://www.gannett-cdn.com/-mm-/eb09c022a647a6433f42b5162b852ebab046ef74/c=0-193-4603-2794/local/-/media/2018/07/02/Brevard/Brevard/636661326954767348-CAR145BCH-9432.jpg?width=3200&height=1680&fit=crop" width="300">
+  </h1>
+  <p id="demo"></p>
+
+  <script>
+  var fruits, text, fLen, i;
+  fruits = ["Cantaloupe", "Mango", "Apple", "Lemon", "Orange", "Pineapple", "Papaya", "Grapefruit"];
+  fLen = fruits.length;
+
+  text = "<ul>";
+  for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+  }
+  text += "</ul>";
+
+  document.getElementById("demo").innerHTML = text;
+  </script>
+
+
+  <div>
+  <table style="width:80%" bgcolor="pink">
+    <tr>
+      <th style="color:red">Product Name</th>
+      <th style="color:red">Quantity</th>
+      <th style="color:red">Unit Price</th>
+      <th style="color:red">Total</th>
+    </tr>
+    <form id="newform">
+    <tr>
+      <td>Cantaloupe</td>
+      <td><input type="text" id="cantaloupeqty"></td>
+      <td>3.50</td>
+      <td id="cantaloupetotal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td>Mango</td>
+      <td><input type="text" id="mangoqty"></td>
+      <td>1.50</td>
+      <td id="mangototal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td>Apple</td>
+      <td><input type="text" id="appleqty"></td>
+      <td>1.25</td>
+      <td id="appletotal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td>Lemon</td>
+      <td><input type="text" id="lemonqty"></td>
+      <td>1.10</td>
+      <td id="lemontotal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td>Orange</td>
+      <td><input type="text" id="orangeqty"></td>
+      <td>1.20</td>
+      <td id="orangetotal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td>Papaya</td>
+      <td><input type="text" id="papayaqty"></td>
+      <td>10.00</td>
+      <td id="papayatotal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td>Grapefruit</td>
+      <td><input type="text" id="grapefruitqty"></td>
+      <td>1.50</td>
+      <td id="grapefruittotal">$0.00</td>
+    </tr>
+
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td style="color:red" >GRAND TOTAL</td>
+      <td id="grandTotal">$0.00</td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+  </table>
+  <input type="button" value="calculate" onclick="cashRegister()">
+</form>
+  </div>
+  </body>
+  <script src="script.js"></script>
+</html>

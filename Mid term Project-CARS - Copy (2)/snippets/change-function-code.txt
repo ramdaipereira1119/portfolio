@@ -1,0 +1,6 @@
+document.getElementById('info-name').textContent = stateData[selected].name;
+document.getElementById('info-maker').textContent = stateData[selected].maker;
+document.getElementById('info-engine').textContent = stateData[selected].engine;
+document.getElementById('info-acceleration').textContent = stateData[selected].acceleration;
+document.getElementById('info-speed').textContent = stateData[selected].speed;
+document.getElementById('info-total').textContent = stateData[selected].total;
